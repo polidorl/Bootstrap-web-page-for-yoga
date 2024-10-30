@@ -1,0 +1,172 @@
+/* 1-*********************Custom Properties (Variables CSS)***************** */
+
+:root{
+    --first-color:rgb(110, 193, 228);
+    --first-alpha-color:rgb(110, 193, 228,0.75);
+    --second-color:rgb(97, 206, 112);
+    --second-alpha-color:rgb(97, 206, 112,0.75);
+    --third-color:rgb(64, 84, 178);
+    --third-alpha-color:rgb(64, 84, 178,0.75);
+
+    --link-color:rgb(47, 130, 40);
+    --link-alpha-color:rgb(47,130,40,0.75);
+
+    --bg-color:rgb(245,245,245);
+    --bg-alpha-color:rgb(245,245,245,0.75);
+
+    --bg-header-footer: rgb(84, 89, 95);
+     
+}
+/* 2-******* Reset Styles ******** *.*/
+body{
+    font-family: "Raleway", sans-serif;
+}
+a {
+    color:var(--link-color);
+    transition: all .3s ease-in-out;
+}
+a :hover {
+    color: var(--link-alpha-color);
+}
+
+/* 3-*************************** Bootstrap Styles (modificaciones a los elementos de BS) ***************** */
+
+.navbar-brand img{
+    width: auto;
+    height: 3rem;
+}
+.navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2897, 206, 112, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease-out;
+}
+
+.navbar-toggler-icon:hover {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2897, 206, 112, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.75;
+}
+
+.nav-item {
+    transition: all .3s ease-out;
+}
+
+.nav-item:hover {
+    background-color: var(--first-alpha-color);
+}
+
+.dropdown-item {
+    color: var(--first-alpha-color);
+    font-weight: bold;
+    transition: all .3s ease-out;
+}
+
+.dropdown-item :hover{
+    color: var(--third-alpha-color);
+    font-weight: bold;
+}
+.nav-link {
+    margin-left: .5rem;
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(----first-alpha-color);
+}
+
+/*.bg-dark {
+    background-color: var(--first-color) !important;
+}*/
+/* 4-********** My Styles (estilos propiios que se generan) ********** */
+
+/* cambios en la etiqueta de navegacion y en footer*/
+
+.bg-header-footer {
+    background-color: rgb(84, 89, 95);
+}
+
+
+/* Cambios en el archivo: index.html */
+
+/* la sig clase se aplica a la etiqueta "main" del archivo index.html */
+.bg-gradient-blue-green {
+    background-color: rgba(83, 184, 152,1);
+    background-image: linear-gradient(135deg,
+     rgba(47,145, 224, 0.91),
+     rgba(7,31,51,0.97) 79%);
+
+     background-image: linear-gradient(131deg,
+     rgba(28, 118, 173, 0.92),
+     rgba(83,184,152,1));
+}
+
+/* Cambios en el archivo tiposDeYoga.html */
+
+/*las sig clases se aplican en la pag "tiposDeYoga.html" en la etiqueta: "main" .bg-color*/
+.bg-color {
+    background-color: var(--bg-color);
+}
+/* Para la transparencia de las imag de fondo se crea la sig clase */
+.bg-alpha-color {
+    background-color: var(--bg-alpha-color);
+}
+
+.bg-hero-image{
+    background-image: var(--bg-image);
+    /* la variable --bg-image, no existe en root por lo que se crea a traves del atributo style */
+    /* en el archivo de tiposDeYoga.html */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Para que las imagenes de fondo esten centrada uso un background-position*/
+    background-position: center;
+}
+
+/* Cambios en el archivo cursos.html */
+
+.bg-second-alpha-color {
+    background-color: rgb(122, 122, 122, 0.75);
+}
+
+/* Cambios en el archivo tienda.html */
+.text-second-color {
+    color: var(--second-color);
+}
+
+/* Cambios realizados en los estilos de Bootrap, en el archivo contacto.html */
+
+.carousel-caption {
+    z-index:1;
+}
+
+/* 5-Los Breakpoints Se copian de la documentacion de Bootstrap:  Layout Breakpoints*/
+
+/* // X-Small devices (portrait phones, less than 576px)  */ 
+/* // No media query for `xs` since this is the default in Bootstrap */ 
+
+/*  // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* // Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) { 
+    .nav-item:hover {
+        background-color: transparent;
+    }
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */ 
+@media (min-width: 1200px) { 
+
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */ 
+@media (min-width: 1400px) { 
+
+}

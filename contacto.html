@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./img/yoga-favicon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Google fonts Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Enlace de iconos con tipografia tomados de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-header-footer">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/yoga-favicon.jpg" alt="Logo-Yoga">
+            </a>
+            <!-- Menu de hamburguesa-->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-lg-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tipos de Yoga
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tiposDeYoga.html#hatha">Hatha</a></li>
+                            <li><a class="dropdown-item" href="tiposDeYoga.html#vinyasa">Vinyasa</a></li>
+                            <li><a class="dropdown-item" href="tiposDeYoga.html#ashtanga">Ashtanga</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main pt-5 bg-color>
+        <div class="container mb-5">
+            <div class="section row">
+                <article class="col-12 text-center">
+                    <h1>Contacto</h1>
+                    <p class="fs-5">Comentarios!</p>
+                    <p class="fs-5">Si deseas más información, revisa en:
+                        <a href="https://github.com/polidorl/">https://github.com/polidorl/</a>
+                    </p>
+                </article>
+                <!-- Formulario-->
+                <!-- Para el envio del formulario se utiliza la sig API:https://formsubmit.co/  -->
+                <!-- copio <form action="https://formsubmit.co/your@email.com" method="POST" />-->
+                <article class="col-12 col-lg-6 order-lg-1">
+                    <form action="https://formsubmit.co/polidor.lisbeth4@gmail.com" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Nombre:</label>
+                            <input class="form-control" id="name" type="text" name="name" placeholder="Tu nombre"
+                                required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email:</label>
+                            <input class="form-control" id="email" type="email" name="email" placeholder="Tu correo"
+                                required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="comments">Comentarios</label>
+                            <textarea rows="5" class="form-control" name="comments" id="comments"
+                                placeholder="Tus comentarios" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <input class="btn btn-lg btn-success" type="submit">
+
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5502/gracias.html">
+                            <input type="hidden" name="_subject" value="Comentarios/Sugerencias">
+                        </div>
+
+                    </form>
+                </article>
+                <!--En la doc busco aspect-ratio copio el codigo httml correspondiente a la dimension 16x9-->
+                <!-- Esto porque el mapa corresponde a esta medidas16x9-->
+                <!-- Para el mapa busco en Google map, ubico la direccion de interes, click compartir-->
+                <!-- luego click Insertar un mapa y por ultimo copiar HTML -->
+                <article class="col-12 col-lg-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.313718116126!2d-66.8960118632848!3d10.3966388661325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2af69a2375a695%3A0x3814e9f1a6d69f18!2sParque%20Vinicio%20Adames!5e0!3m2!1ses!2sve!4v1730212176910!5m2!1ses!2sve"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+
+            <div class="carousel-inner">
+                <div class="carousel-caption bg-second-alpha-color">
+                    <article class="text-dark">
+                        <aside>
+                            <p class="fs-3"><b>Lisbeth E Polidor</b></p>
+                            <p class="fs-5 d-none d-sm-block">Yoguista y Disenadora Web.</p>
+                        </aside>
+                        <aside class="d-none d-md-block">
+                            <p>Comence a crear sitios web en: <b>2022</b></p>
+                            <p>Lo que más me gusta de la programación web es la constante evolución y la oportunidad de
+                                aprender nuevas tecnologías.</p>
+                            <p>Me encanta la programación web porque me permite <em>trabajar de forma <b>independiente y
+                                        flexible.</b></em></p>
+                        </aside>
+                    </article>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./img/yoga-about-1.jpg" class="d-block w-100" alt="postura yoga 1">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/yoga-about-2.jpg" class="d-block w-100" alt="postura yoga 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/yoga-about-3.jpg" class="d-block w-100" alt="postura yoga 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/yoga-about-4.jpg" class="d-block w-100" alt="postura yoga 4">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <footer class="bg-header-footer p-3">
+        <div class="container text-center">
+            <!-- a[href="https://.com"][target="_blank"]*7>i.bi.bi-  -->
+            <nav class="d-flex justify-content-evenly">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3 text-light"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3 text-light"></i></a>
+                <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3 text-light"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3 text-light"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3 text-light"></i></a>
+                <a href="https://m.me/user.com" target="_blank"><i class="bi bi-messenger fs-3 text-light"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5215512345678" target="_blank"><i
+                        class="bi bi-whatsapp fs-3 text-light "></i></a>
+            </nav>
+            <small class="text-black-30">&copy; 2024. Pag Web ilustrativa realizada con Bootstrap 5.
+                <a class="ms-2 text-dark fs-5" href="https://github.com/polidorl?tab=repositories"
+                    target="_blank">Lisbeth E. Polidor</a>
+            </small>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

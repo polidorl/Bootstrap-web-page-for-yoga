@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Yoga</title>
+    
+    <link rel="shortcut icon" href="./img/yoga-favicon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Google fonts Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Enlace de iconos con tipografia tomados de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-header-footer">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/yoga-favicon.jpg" alt="Logo-Yoga">
+            </a>
+            <!-- Menu de hamburguesa-->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-lg-auto">
+
+                    <li class="nav-item">
+                        <!-- <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>-->
+                        <a class="nav-link"  href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"   href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tipos de Yoga
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tiposDeYoga.html#hatha">Hatha</a></li>
+                            <li><a class="dropdown-item" href="tiposDeYoga.html#vinyasa">Vinyasa</a></li>
+                            <li><a class="dropdown-item" href="tiposDeYoga.html#ashtanga">Ashtanga</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="cursos.html">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-5 bg-color">
+        <div class="container">
+            <section class="row">
+                <article class="col-12 text-center">
+                    <h1>Tipos de Yoga & Cursos</h1>
+                    <p class="fs-5">
+                    Aprendizaje personalizado y adaptado a tus necesidades, es la oportunidad de profundizar en el yoga a tu propio ritmo. ¡Regístrate y comienza tu viaje hacia un bienestar integral!.
+                    </p>
+                </article>
+                <!-- De la doc de BS vamos a "cards" y a la derecha click overlay y copied el codigo de esta tarjeta a cont: -->
+                <article class="col-12 ">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-1.jpg" class="card-img" alt="postura Hatha">
+                        <div class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title ">Postura Hatha1</h5>
+                            <p class="card-text  "><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                principiantes.</small>
+                                <br>
+                                <!-- aqui en este enlace se copia data-bs-toggle="modal"  -->
+                                <!-- data-bs-target="#exampleModal"> que viene de la doc de modals  -->
+
+                                <!-- <a class="text-primary fw-bold" href="">Hatha para la vida1</a> -->
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-1">
+                                    Hatha para la vida1
+                                </button>
+                            </p>
+                            <p class="card-text pb-2">El hatha1 yoga es muy adecuado como yoga para principiantes, ya que hay
+                            ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                            y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                            aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha-cliente-1</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Las posturas de yoga, también conocidas como asanas, son una parte fundamental
+                                        de la práctica de yoga.A nivel de tu mente, el Hatha yoga puede ayudarte a
+                                        reducir el estrés y la ansiedad, aliviar la tensión, conectar cuerpo y mente.
+                                    </p>
+                                    <img src="./img/yoga-layout-1.jpg" alt="yoga-layout-1" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-4">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-2.jpg" class="card-img" alt="postura Hatha">
+                        <div class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3 ">
+                            <h5 class="card-title">Postura Hatha2</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <!-- aqui en este enlace se copia data-bs-toggle="modal"  -->
+                                <!-- data-bs-target="#exampleModal"> que viene de la doc de modals  -->
+                                <a class="text-primary fw-bold" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-2">Hatha Beneficios2</a>
+                            </p>
+
+                            <p class="card-text pb-2">El hatha2 yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Asana, en sánscrito, significa literalmente «asiento», pero su definición se ha
+                                        ido ampliando con el tiempo y ahora abarca a todas las posturas que se realizan
+                                        en la práctica con el fin de equilibrar cuerpo y mente.Practicando Hatha yoga
+                                        con regularidad, verás aparecer muchos beneficios físicos y mentales en tu
+                                        cuerpo.
+                                    </p>
+                                    <img src="./img/yoga-layout-2.jpg" alt="yoga-layout-2" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-4">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-6.jpg" class="card-img" alt="postura Hatha">
+                        <div
+                            class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title">Postura Hatha</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <a class="text-primary fw-bold" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-3">Hatha posturas4</a>
+                            </p>
+
+                            <p class="card-text pb-2">El hatha3 yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Dependiendo de su ejecución estas se pueden dividir en posturas de pie,
+                                        sentadas, invertidas, torsiones, equilibrios, flexiones y extensiones.
+                                    </p>
+                                    <img src="./img/yoga-layout-3.jpg" alt="yoga-layout-3" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-4">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-4.jpg" class="card-img" alt="postura Hatha">
+                        <div
+                            class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title">Postura Hatha</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <a class="text-primary fw-bold" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-4">Hatha salud4</a>
+                            </p>
+
+                            <p class="card-text pb-2">El hatha4 yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        El significado de las posturas de yoga proviene del sánscrito, de la palabra
+                                        “asana”, que significa postura, precedida del nombre en sánscrito de cada
+                                        postura en cuestión.
+                                    </p>
+                                    <img src="./img/yoga-layout-4.jpg" alt="yoga-layout-4" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary"
+                                     data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                             </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-4">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-2.jpg" class="card-img" alt="postura Hatha">
+                        <div
+                            class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title">Postura Hatha</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <a class="text-primary fw-bold" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-5">Hatha significado5</a>
+                            </p>
+
+                            <p class="card-text pb-2">El hatha5 yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Las posturas y técnicas de respiración del Hatha yoga ayudan a mejorar su
+                                        inmunidad, reducir los signos del envejecimiento, regular sus hormonas y
+                                        favorecer una buena circulación sanguínea.
+                                    </p>
+                                    <img src="./img/yoga-layout-5.jpg" alt="yoga-layout-5" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary"
+                                     data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                             </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-4">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-6.jpg" class="card-img" alt="postura Hatha">
+                        <div
+                            class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title">Postura Hatha</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <a class="text-primary fw-bold" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-6">Hatha para la vida6</a>
+                            </p>
+
+                            <p class="card-text pb-2">El hatha6 yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        A nivel físico, las posturas de Hatha yoga ayudan a mantener la flexibilidad,
+                                        aumentan la fuerza y mejoran el equilibrio, alivian el dolor lumbar, trabajan la
+                                        alineación y pueden ayudar a reducir la tensión arterial.
+                                    </p>
+                                    <img src="./img/yoga-layout-6.jpg" alt="yoga-layout-6" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary"
+                                     data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                             </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12 col-sm-6 col-lg-4">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-7.jpg" class="card-img" alt="postura Hatha">
+                        <div
+                            class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title">Postura Hatha</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <a class="text-primary fw-bold" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-7">Hatha principiantes7</a>
+                            </p>
+                            <p class="card-text pb-2">El hatha yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        Otra de las asanas del Hatha yoga que fomenta la relajación es la postura del
+                                        niño, que es ideal para reducir la fatiga, el estrés y el cansancio.Practicando
+                                        Hatha yoga con regularidad, verás aparecer muchos beneficios físicos y mentales
+                                        en tu cuerpo.
+                                    </p>
+                                    <img src="./img/yoga-layout-7.jpg" alt="yoga-layout-7" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+             <button type="button" class="btn btn-secondary"
+                 data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Save changes</button>
+         </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col-12">
+                    <div class="card text-bg-dark border-0 rounded-0">
+                        <img src="./img/cliente-8.jpg" class="card-img" alt="postura Hatha">
+                        <div
+                            class="card-img-overlay bg-second-alpha-color d-flex flex-column justify-content-md-center ps-3">
+                            <h5 class="card-title">Postura Hatha</h5>
+                            <p class="card-text"><small>El <b>hatha</b> yoga es muy adecuado como yoga para
+                                    principiantes.</small>
+                                <br>
+                                <!-- <a class="text-primary fw-bold" href="">Hatha para la vida</a> -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#cliente-8">
+                                    Hatha para la vida1
+                                </button>
+                            </p>
+
+                            <p class="card-text pb-2">El hatha8 yoga es muy adecuado como yoga para principiantes, ya que hay
+                                ejercicios para cada nivel de forma física o edad.La combinación de asanas (movimiento)
+                                y pranayama (respiración) fomenta la flexibilidad y la paciencia y, en general, ayuda a
+                                aumentar la conciencia del propio cuerpo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="cliente-8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="exampleModalLabel">Hatha cliente-2</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        El yoga es una disciplina completa que te permite cultivar tu cuerpo, mente y
+                                        espíritu, Nunca es tarde para comenzar a recorrer el camino del yoga.
+                                        Los ejercicios de respiración son tan importantes como las posturas, ya que
+                                        ayudan a trabajar la respiración.
+                                    </p>
+                                    <img src="./img/yoga-layout-8.jpg" alt="yoga-layout-8" class="img-fluid">
+                                </div>
+                                <!-- <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary"
+                                     data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                             </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-light p-3">
+        <div class="container text-center">
+            <!-- a[href="https://.com"][target="_blank"]*7>i.bi.bi-  -->
+            <nav class="d-flex justify-content-evenly">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
+                <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+                <a href="https://m.me/user.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5215512345678" target="_blank"><i
+                        class="bi bi-whatsapp fs-3"></i></a>
+            </nav>
+            <small class="text-black-50">&copy; 2024. Pag Web realizada con Bootstrap 5.
+                <a href="https://github.com/polidorl?tab=repositories" target="_blank">Lisbeth Polidor</a>
+            </small>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
